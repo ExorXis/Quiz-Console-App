@@ -1,57 +1,69 @@
-💻✨ Project Name: Quiz Console App
-🌟 Overview:
-This Java console-based application allows users to play a multiple-choice quiz. The quiz consists of 5 hardcoded questions, and users enter their answers via the keyboard. After completing the quiz, the app displays the user's score along with the correct answers.
+# 🧠 Java Quiz Console App
 
+This is a **console-based multiple-choice quiz application** built using **Core Java**. It demonstrates object-oriented programming concepts such as classes, encapsulation, and array handling. Users answer 5 questions, and the app calculates and displays their score with correct answers at the end.
 
-🧠 Key Components:
-📦 Question.java – The Blueprint
-This class defines the Question object, which holds:
-    An id
-    The question text
-    Four options (opt1 to opt4)
-    The correct answer
+---
+
+## 📌 Overview
+
+- 5 hardcoded multiple-choice questions
+- User selects answers via keyboard input
+- Final score and correct answers are displayed after the quiz
+
+---
+
+## 🛠️ Key Components
+
+### 📦 `Question.java` – The Blueprint
+Defines the `Question` object with:
+- Question ID
+- Question text
+- Four options (`opt1` to `opt4`)
+- Correct answer
 
 Includes:
-    Getters and setters for all properties
-    A toString() method for easy debugging
+- Getters and setters for all fields
+- `toString()` method for debugging
 
-This is where your questions live, waiting to be answered.
+---
 
+### 🧠 `QuestionService.java` – The Brain
+Handles the quiz logic:
+- Initializes an array of 5 `Question` objects
+- Stores user answers in a separate `selection[]` array
 
-🛠️ QuestionService.java – The Brain
-This class does all the tasks:
-    1. Holds 5 questions in an array, initialized in the constructor.
-    2. Stores user's answers in a separate selection[] array.
-    3. Includes two main methods:
-        playQuiz():
-            Loops through each question
-            Displays the options
-            Takes input from the user
+Main methods:
+- `playQuiz()`:  
+  - Loops through each question  
+  - Displays options and collects user input
+- `printScore()`:  
+  - Compares user answers with correct ones  
+  - Displays score and correct answers
 
-        printScore():
-            Compares user answers to correct ones
-            Calculates and displays the score
-            Prints the correct answers for review
+---
 
+### 🚀 `Main.java` – Entry Point
+- Creates an instance of `QuestionService`
+- Runs the quiz using `playQuiz()`
+- Shows the score using `printScore()`
 
-🚀 Main.java – The Entry Point
-This class:
-    Creates a QuestionService object
-    Starts the quiz using playQuiz()
-    Shows the score using printScore()
+---
 
+## ✨ Features
+- Clean object-oriented structure
+- Fully working MCQ quiz in the console
+- Score calculation + answer review
+- User input handling with `Scanner`
 
-🎯 Features:
-    Fully functional MCQ quiz
-    Clean OOP structure (encapsulation through getters/setters)
-    Accepts user input via Scanner
-    Calculates and displays final score
-    Reveals correct answers post-quiz
+---
 
+## 🛠 Technologies Used
+- Java (JDK 8+)
+- Console / Terminal
 
-💡 Possible Enhancements:
-    Timer for each question ⏳
-    Random question shuffling 🔀
-    File/database-based question loading 📄
-    GUI using Swing or JavaFX 🎨
-    Add difficulty levels or categories 🎮
+---
+
+## 🚀 How to Run
+
+1. Clone the repository:
+   git clone https://github.com/ExorXis/Quiz-Console-App.git
